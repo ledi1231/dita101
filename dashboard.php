@@ -40,6 +40,7 @@
                         <td><?php echo $user['name']?></td>
                         <td><?php echo $user['surname']?></td>
                         <td><?php echo $user['email']?></td>
+                        <td><a href="delete.php?id=<?php echo $user['id']?>">Delete</a> | <a href="edit.php?id=<?php echo $user['id']?>">Update</a> </td>
                     </tr>
                     <?php 
                     }

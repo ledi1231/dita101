@@ -5,12 +5,10 @@ $pass = "";
 $server = "localhost";
 $dbname = "db";
 
-try{
+try {
 
-    $conn = new PDO("mysql:host=$server;dbname=$dbname",$user,$pass);
-
-}catch(Exeption $e){
+    $conn = new PDO("mysql:host=$server;dbname=$dbname", $user, $pass);
+} catch (Exeption $e) {
 
     echo "Error" . $e->getMessage();
-
 }
