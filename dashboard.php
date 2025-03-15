@@ -9,7 +9,8 @@
             border:1px solid black;
             border-collapse:collapse;
         }
-        td,th{
+        td,th{  
+
             padding: 10px 20px;
         }
     </style>
@@ -30,6 +31,7 @@
                 <th>Name</th>
                 <th>Surname</th>
                 <th>Email</th>
+                <th>Action</th>
             </thead>
             <tbody>
                 <?php 
@@ -40,12 +42,13 @@
                         <td><?php echo $user['name']?></td>
                         <td><?php echo $user['surname']?></td>
                         <td><?php echo $user['email']?></td>
-                    </tr>
+                        <td><a href="delete.php?id=<?php echo $user['id'] ?>">delete</a>| <a href="edit.php?id=<?php echo $user['id']?>">Update</a></td>
                     <?php 
                     }
                     ?>
             </tbody>
         </table>
         <a href="index.php">Add new user</a>
+
 </body>
 </html>
